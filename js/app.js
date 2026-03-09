@@ -1,4 +1,5 @@
-export async function generateAI(prompt) {
+window.generateAI = async function(prompt) {
+
   const response = await fetch("https://api.ubiqitum.com/generate", {
     method: "POST",
     headers: {
@@ -14,4 +15,5 @@ export async function generateAI(prompt) {
 
   const data = await response.json();
   return data.response;
-}
+
+};
