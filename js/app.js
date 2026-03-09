@@ -3,7 +3,7 @@ export async function generateAI(prompt) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "X-API-Key": "API_KEY_GOES_HERE"
+      "X-API-Key": "ubiq_live_sk_R4tY8kLp2VnX7qZc1FmD9sHa6Bw3JgKe0UxTrNvW"
     },
     body: JSON.stringify({
       model: "qwen2.5:14b",
