@@ -5,8 +5,7 @@ window.generateAI = async function(prompt) {
     const response = await fetch("https://api.ubiqitum.com/generate", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-        "X-API-Key": "ubiq_live_sk_R4tY8kLp2VnX7qZc1FmD9sHa6Bw3JgKe0UxTrNvW"
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({
         prompt: prompt
