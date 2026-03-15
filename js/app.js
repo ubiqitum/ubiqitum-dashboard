@@ -24,3 +24,31 @@ window.generateAI = async function(prompt) {
     return "AI request failed.";
   }
 };
+
+window.updateDashboardScores = function(scores) {
+  const relevanceEl = document.getElementById("relevance-text");
+  const awarenessEl = document.getElementById("awareness-text");
+  const considerationEl = document.getElementById("consideration-text");
+  const trustEl = document.getElementById("trust-text");
+  const brandIndexEl = document.getElementById("bar-score-text");
+
+  if (relevanceEl && scores.relevance != null) {
+    relevanceEl.innerText = scores.relevance;
+  }
+
+  if (awarenessEl && scores.awareness != null) {
+    awarenessEl.innerText = scores.awareness;
+  }
+
+  if (considerationEl && scores.consideration != null) {
+    considerationEl.innerText = scores.consideration;
+  }
+
+  if (trustEl && scores.trust != null) {
+    trustEl.innerText = scores.trust;
+  }
+
+  if (brandIndexEl && scores.brandIndex != null) {
+    brandIndexEl.innerText = scores.brandIndex;
+  }
+};
